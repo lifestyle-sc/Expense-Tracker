@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Font Awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+    <!-- local stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Expenses</title>
+</head>
+<body>
+    <nav class="green">
+        <div class="nav-wrapper">
+            <div class="container">
+                <a href="#" class="brand-logo center">Expenses</a>
+                <!-- <ul class="right">
+                  <li><a href="#" class="clear-btn btn green lighten-2">Clear All</a></li>
+                </ul> -->
+            </div>
+        </div>
+    </nav>
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12 main-container">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title header-title">Add Expense</span>
+                        <br>
+                        <form >
+                            <div class="input-field">
+                                <input type="text" id="expense" placeholder="Enter an expense">
+                                <label for="expense">Expense</label>
+                            </div>
+
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input type="number" step="0.01" min="0" id="amount" placeholder="Add amount">
+                                    <label for="amount">Amount</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input type="date" id="date" placeholder="Add date">
+                                    <label for="date">Date</label>
+                                </div>
+                            </div>
+                            <button class="add-btn btn green darken-2"><i class="fa fa-plus"></i> Add Expense</button>
+
+                            <a href="#" class="clear-btn btn green lighten-2 right"><i class="fas fa-trash-alt"></i> Clear All</a>
+
+                            <button class="back-btn btn grey right"><i class="fa fa-chevron-circle-left"></i> Back</button>
+
+                            <button class="update-btn btn orange darken-2"><i class="fas fa-edit"></i> Update </button>
+                            
+                            <button class="delete-btn btn red"><i class="fas fa-times"></i> Delete</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="center total-expenses-h">
+                    <h4>Total Expenses : <span id="total-expenses">$0</span> </h4>
+                </div>
+
+                <!-- <div class="card">
+                    <div class="card-content">
+                       
+                    </div>
+                </div> -->
+                <table id="expense-list">
+                    <thead>
+                        <tr>
+                            <th>Expense</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="expense-body">
+                        <!-- <tr id="item-0">
+                            <td>Groceries</td>
+                            <td>$200.50</td>
+                            <td>09/05/2020</td>
+                            <td><i class="fas fa-pencil-alt green-text"></i></td>
+                        </tr>
+                        <tr id="item-1">
+                            <td>Transportation</td>
+                            <td>$500</td>
+                            <td>09/25/2020</td>
+                            <td><i class="fas fa-pencil-alt green-text"></i></td>
+                        </tr>
+                        <tr id="item-2">
+                            <td>Rent</td>
+                            <td>$900</td>
+                            <td>09/30/2020</td>
+                            <td><i class="fas fa-pencil-alt green-text"></i></td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <!-- Local js -->
+    <script src="js/app.js"></script>
+</body>
+</html>

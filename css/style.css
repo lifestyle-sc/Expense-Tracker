@@ -1,0 +1,18 @@
+.alert {
+  width: 100%;
+  padding: 1rem 1rem;
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  text-align: center;
+  color: white;
+}
+
+.alert-success {
+  background: green;
+}
+.alert-danger {
+  background: red;
+}
+.alert-warning {
+  background: orange;
+}
